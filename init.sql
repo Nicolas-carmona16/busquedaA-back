@@ -11,7 +11,7 @@ CREATE TABLE IF NOT EXISTS public.flight_class
     TABLESPACE pg_default;
 
 ALTER TABLE IF EXISTS public.flight_class
-    OWNER to sa;
+    OWNER to postgres;
 
 
 CREATE TABLE IF NOT EXISTS public.flight
@@ -36,7 +36,7 @@ CREATE TABLE IF NOT EXISTS public.flight
     TABLESPACE pg_default;
 
 ALTER TABLE IF EXISTS public.flight
-    OWNER to sa;
+    OWNER to postgres;
 
 
 
