@@ -43,7 +43,7 @@ jobs:
       # Initialize Database
       - name: Initialize Database
         run: |
-          psql -h localhost -U sa -d vueloudea -f init.sql
+          psql -h localhost -U postgres -d vueloudea -f init.sql
         env:
           PGPASSWORD: root
 
