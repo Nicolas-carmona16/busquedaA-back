@@ -51,6 +51,22 @@ public class Flight implements Serializable {
         this.price = price;
     }
 
+    public String getOrigin() {
+        return origin;
+    }
+
+    public void setOrigin(String origin) {
+        this.origin = origin;
+    }
+
+    public String getDestination() {
+        return destination;
+    }
+
+    public void setDestination(String destination) {
+        this.destination = destination;
+    }
+
     @Transient
     public Duration getDuration() {
         return Duration.between(departureTime, arrivalTime);

@@ -1,7 +1,6 @@
 package com.udea.busquedaA.model;
 
 import jakarta.persistence.*;
-
 import java.io.Serializable;
 import java.util.List;
 import java.util.Objects;
@@ -14,11 +13,6 @@ public class FlightClass implements Serializable {
 
     private String flightClassName;
     private Integer luggageAmount;
-
-    public Integer getExtraPrice() {
-        return extraPrice;
-    }
-
     private Integer extraPrice;
 
     public FlightClass() {
@@ -31,6 +25,39 @@ public class FlightClass implements Serializable {
         this.extraPrice = extraPrice;
     }
 
+    // Getter y Setter para flightClassName
+    public String getFlightClassName() {
+        return flightClassName;
+    }
+
+    public void setFlightClassName(String flightClassName) {
+        this.flightClassName = flightClassName;
+    }
+
+    // Getter y Setter para luggageAmount
+    public Integer getLuggageAmount() {
+        return luggageAmount;
+    }
+
+    public void setLuggageAmount(Integer luggageAmount) {
+        this.luggageAmount = luggageAmount;
+    }
+
+    // Getter y Setter para extraPrice
+    public Integer getExtraPrice() {
+        return extraPrice;
+    }
+
+    public void setExtraPrice(Integer extraPrice) {
+        this.extraPrice = extraPrice;
+    }
+
+
+    public Integer getIdFlightClass() {
+        return idFlightClass;
+    }
+
+    // equals y hashCode
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -41,6 +68,6 @@ public class FlightClass implements Serializable {
 
     @Override
     public int hashCode() {
-        return Objects.hashCode(idFlightClass);
+        return Objects.hash(idFlightClass);
     }
 }
