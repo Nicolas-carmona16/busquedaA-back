@@ -61,6 +61,7 @@ jobs:
   sonarcloud:
     name: SonarCloud Analysis
     needs: tests
+    if: always()  # Esto asegura que el análisis se ejecute sin importar el resultado de 'tests'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
